@@ -22,7 +22,7 @@ const userRoute = require('./routes/users')
 app.use('/api/products', productsRoute);
 app.use('/api/users', userRoute);
 
-/*
+
 app.get('/', function (req, res) {
     res.send('Hello from server')
 })
@@ -30,8 +30,8 @@ app.get('/', function (req, res) {
 app.listen(PORT, function () {
     console.log('Server running on localhost: '+PORT)
 })
-*/
 
+/*
 // Serve only the static files form the dist directory
 app.use(express.static('./dist/FreePuzzle'));
 
@@ -41,5 +41,5 @@ app.get('/*', (req, res) =>
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
-
+*/
 module.exports = app;
