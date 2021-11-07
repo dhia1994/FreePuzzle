@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "freepuzzle",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -53,5 +53,17 @@
   "engines": {
     "node": "12.16.1",
     "npm": "6.13.4"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhia1994/FreePuzzle.git.git"
+  },
+  "author": "dhia1994",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhia1994/FreePuzzle.git/issues"
+  },
+  "homepage": "https://github.com/dhia1994/FreePuzzle.git#readme"
 }
