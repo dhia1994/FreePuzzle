@@ -1,7 +1,8 @@
-const express = require('express')
-const bodyParser = require('body-parser')
+const express = require('express');
+const bodyParser = require('body-parser');
 const cors = require('cors');
-const app = express()
+const app = express();
+const path = require('path');
 
 const PORT = 3000
 
@@ -36,7 +37,8 @@ app.listen(PORT, function () {
 app.use(express.static('./dist/FreePuzzle'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/FreePuzzle/'}),
+    //res.sendFile('index.html', {root: 'dist/FreePuzzle/'}),
+    res.sendFile(path.join(__dirname, './dist/FreePuzzle', 'index.html')),
 );
 
 // Start the app by listening on the default Heroku port
