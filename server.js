@@ -23,7 +23,7 @@ const userRoute = require('./routes/users')
 app.use('/api/products', productsRoute);
 app.use('/api/users', userRoute);
 
-/*
+
 app.get('/', function (req, res) {
     res.send('Hello from server')
 })
@@ -31,17 +31,17 @@ app.get('/', function (req, res) {
 app.listen(PORT, function () {
     console.log('Server running on localhost: '+PORT)
 })
-*/
 
+/*
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/FreePuzzle'));
+app.use(express.static('./dist/TreePuzzle'));
 
 app.get('/*', (req, res) =>
-    //res.sendFile('index.html', {root: 'dist/FreePuzzle/'}),
-    res.sendFile(path.join(__dirname, './dist/FreePuzzle', 'index.html')),
+    //res.sendFile('index.html', {root: 'dist/TreePuzzle/'}),
+    res.sendFile(path.join(__dirname, './dist/TreePuzzle', 'index.html')),
 );
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
-
+*/
 module.exports = app;

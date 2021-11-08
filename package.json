@@ -1,5 +1,5 @@
 {
-  "name": "freepuzzle",
+  "name": "TreePuzzle",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -58,12 +58,12 @@
   "main": "karma.conf.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhia1994/FreePuzzle.git.git"
+    "url": "git+https://github.com/dhia1994/TreePuzzle.git.git"
   },
   "author": "dhia1994",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dhia1994/FreePuzzle.git/issues"
+    "url": "https://github.com/dhia1994/TreePuzzle.git/issues"
   },
-  "homepage": "https://github.com/dhia1994/FreePuzzle.git#readme"
+  "homepage": "https://github.com/dhia1994/TreePuzzle.git#readme"
 }
