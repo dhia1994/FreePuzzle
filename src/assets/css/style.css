@@ -445,8 +445,7 @@ textarea.input {
 \*----------------------------*/
 
 #header {
-  padding-top: 15px;
-  background-color: #d3d0ce;
+  background-color: #cdd4ca;
 }
 
 .header-logo {
@@ -455,7 +454,8 @@ textarea.input {
 
 .header-logo .logo img {
   display: block;
-  width: 70%;
+  width: 110px;
+  height: 70px;
 }
 
 /*----------------------------*\
@@ -463,7 +463,7 @@ textarea.input {
 \*----------------------------*/
 
 .header-search {
-  padding:  1% 2%;
+  padding: 15px 0px;
 }
 
 .header-search form {
@@ -482,7 +482,7 @@ textarea.input {
 
 .header-search form .search-btn {
   height: 40px;
-  width: 15%;
+  width: 100px;
   background: #4e9833;
   color: #FFF;
   font-weight: 700;
@@ -497,7 +497,7 @@ textarea.input {
 
 .header-ctn {
   float: right;
-  padding: 10px 10px;
+  padding: 15px 0px;
 }
 
 .header-ctn>div {
