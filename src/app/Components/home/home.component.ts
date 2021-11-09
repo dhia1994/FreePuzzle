@@ -6,7 +6,7 @@ import { ProductModelServer, serverResponse } from 'src/app/models/product.model
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 
 
@@ -19,6 +19,9 @@ export class HomeComponent implements OnInit {
               private router:Router) {
   }
 
+  slides = [{ 'image': '../../../assets/img/19ae1ce9-c99e-4285-8c9f-557099825da9.jpg' },
+    { 'image':'../../../assets/img/c11a7fd5-8bc1-4cdb-a4a2-aa1333b8bc0c.jpg' },
+];
   totalLength: any
   page: number = 1;
 
@@ -41,6 +44,9 @@ export class HomeComponent implements OnInit {
       this.router.navigate(['/product', id]).then();
     }
       , 1500); 
-        }
+  }
  
+  
+  
+  
 }

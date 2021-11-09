@@ -11,8 +11,8 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { HomeComponent } from './Components/home/home.component';
 import { ProductComponent } from './Components/product/product.component';
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
 
@@ -31,7 +31,9 @@ import { ProductComponent } from './Components/product/product.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    BrowserAnimationsModule,
+    MatCarouselModule.forRoot(),
    
   
   ],
