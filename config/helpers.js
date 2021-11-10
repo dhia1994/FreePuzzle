@@ -1,6 +1,6 @@
 const Mysqli = require('mysqli');
 const dbConfig = require("../config/db.config.js");
- /*
+/*
 // Pass in json
 let conn = new Mysqli({
     host: 'us-cdbr-east-04.cleardb.com', //  IP/domain name  
@@ -20,10 +20,11 @@ var connection = Mysqli.createPool({
   database: dbConfig.db
 });
 
-module.exports = connection;
-/*
-module.exports = connection;
+//module.exports = connection;
+
 module.exports = {
-    database : db
+  host: dbConfig.host,
+  user: dbConfig.user,
+  password: dbConfig.passwd,
+  database: dbConfig.db
 }
-*/
