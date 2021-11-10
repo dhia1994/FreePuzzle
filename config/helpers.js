@@ -1,3 +1,4 @@
+/*
 const Mysqli = require('mysqli');
  
 // Pass in json
@@ -8,9 +9,11 @@ let conn = new Mysqli({
     passwd: 'e042c3ac', // password  
     db: 'heroku_3df33406a96dc2a' //You  can specify the database or not [optional]  
 });
+*/
 
+// create new database instance
+let db = new Prohairesis("mysql://bad3b98f4973cc:e042c3ac@us-cdbr-east-04.cleardb.com/heroku_3df33406a96dc2a?reconnect=true");
 let db = conn.emit(false, '')
-
 module.exports = {
     database : db
 }

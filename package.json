@@ -36,6 +36,7 @@
     "ngx-pagination": "^5.1.1",
     "ngx-slick-carousel": "^0.5.1",
     "path": "^0.12.7",
+    "prohairesis": "^1.2.5",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "typescript": "~4.3.5",
