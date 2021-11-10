@@ -1,5 +1,5 @@
 const Mysqli = require('mysqli');
-/* 
+ 
 // Pass in json
 let conn = new Mysqli({
     host: 'us-cdbr-east-04.cleardb.com', //  IP/domain name  
@@ -8,11 +8,8 @@ let conn = new Mysqli({
     passwd: 'e042c3ac', // password  
     db: 'heroku_3df33406a96dc2a' //You  can specify the database or not [optional]  
 });
-*/
-var connection = Mysqli.createConnection('mysql://bad3b98f4973cc:e042c3ac@us-cdbr-east-04.cleardb.com/heroku_3df33406a96dc2a?reconnect=true')
-connection.connect();
 
-let db = connection.emit(false, '')
+let db = conn.emit(false, '')
 
 module.exports = {
     database : db
