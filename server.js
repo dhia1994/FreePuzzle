@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 app.use(express.static(__dirname));
-process.env.PORT = 80;
+
 const PORT = process.env.PORT || 3000 || 80;
 
 app.use(bodyParser.json())
