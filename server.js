@@ -29,8 +29,8 @@ app.get('/', function (req, res) {
 })
 */
 
-console.log(process.env.PORT);
-console.log(process.env.CLEARDB_DATABASE_URL);
+//console.log(process.env.PORT);
+//console.log(process.env.CLEARDB_DATABASE_URL);
 
 // Serve only the static files form the dist directory
 app.use(express.static('./dist/TreePuzzle'));
