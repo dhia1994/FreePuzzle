@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 app.use(express.static(__dirname));
-const PORT =  80;
+const PORT = 80;
 
 app.use(bodyParser.json())
 app.use(express.json())
@@ -29,8 +29,8 @@ app.get('/', function (req, res) {
 })
 */
 
-//console.log(process.env.PORT);
-//console.log(process.env.CLEARDB_DATABASE_URL);
+console.log(process.env.PORT);
+console.log(process.env.CLEARDB_DATABASE_URL);
 
 // Serve only the static files form the dist directory
 app.use(express.static('./dist/TreePuzzle'));
