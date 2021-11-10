@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 app.use(express.static(__dirname));
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000 || 80;
 
 app.use(bodyParser.json())
 app.use(express.json())
@@ -28,6 +28,7 @@ app.get('/', function (req, res) {
     res.send('Hello from server')
 })
 */
+
 console.log(process.env.PORT);
 console.log(process.env.CLEARDB_DATABASE_URL);
 

@@ -1,6 +1,7 @@
 const Mysqli = require('mysqli');
  
 let conn;
+process.env.CLEARDB_DATABASE_URL = 'mysql://bad3b98f4973cc:e042c3ac@us-cdbr-east-04.cleardb.com/heroku_3df33406a96dc2a?reconnect=true';
 if (process.env.CLEARDB_DATABASE_URL) {
     conn = new Mysqli(process.env.CLEARDB_DATABASE_URL)
 }
