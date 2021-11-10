@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 app.use(express.static(__dirname));
-const PORT = 3000
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json())
 app.use(express.json())
@@ -28,6 +28,8 @@ app.get('/', function (req, res) {
     res.send('Hello from server')
 })
 */
+console.log(process.env.PORT);
+console.log(process.env.CLEARDB_DATABASE_URL);
 
 // Serve only the static files form the dist directory
 app.use(express.static('./dist/TreePuzzle'));
@@ -38,7 +40,7 @@ app.get('/*', (req, res) =>
 );
 
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 3000, function () {
+app.listen(PORT, function () {
     console.log('Server running on localhost: '+ PORT)
 })
 module.exports = app;
