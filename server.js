@@ -6,9 +6,6 @@ const path = require('path');
 app.use(express.static(__dirname));
 const PORT = 3000
 
-// create new database instance
-const database = new Prohairesis("mysql://bad3b98f4973cc:e042c3ac@us-cdbr-east-04.cleardb.com/heroku_3df33406a96dc2a?reconnect=true");
-
 app.use(bodyParser.json())
 app.use(express.json())
 app.use(cors({
