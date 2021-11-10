@@ -7,14 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TreePuzzle';
-  public screenWidth: any;
 
-  public screenHeight: any;
-    ngOnInit() {
-
-      this.screenWidth = window.innerWidth;
-
-      this.screenHeight = window.innerHeight;
-
-  }
 }
